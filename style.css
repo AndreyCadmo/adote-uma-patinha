@@ -85,10 +85,18 @@ main {
 .intro h1 {
     margin: 0;
     font-size: 2vw;
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 0.5em;
+    line-height: 0.8em;
 }
 
 .intro p {
     font-size: 1.5vw;
+    letter-spacing: normal;
+    text-align: justify;
+    padding-right: 1em;
+    line-height: 1.5em;
 }
 
 .intro img {
@@ -97,18 +105,65 @@ main {
     border-radius: 1vw;
 }
 
+.intro-detail {
+    flex: 1;
+}
+
 .lema {
     font-size: 1.5vw;
 }
 
+.container-card.is-show {
+    display: flex;
+    gap: 5em;
+}
+
 .list-card {
     display: flex;
-    gap: 1vw;
+    gap: 1em;
+}
+
+.list-card p {
+    display: none;
+}
+
+.is-show .list-card {
+    flex-direction: column;
+    flex: 1;
+}
+
+.is-show .list-card .card {
+    max-height: 25vh;
+}
+
+.is-show .show-img {
+    display: flex;
+    flex: 3;
+}
+
+.show-img .card {
+    max-height: 86vh;
+}
+
+.show-img .card img {
+    height: 90%;
+}
+
+.show-img .card p {
+    height: 10%;
+    font-size: medium;
+    letter-spacing: .2em;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.show-img {
+    display: none;
 }
 
 .card {
     flex: 1;
-    padding: 1vw;
+    padding: 1em;
     border-radius: 1vw;
     border: 0.1vw solid #000000;
     transition: 0.5s;
@@ -126,13 +181,20 @@ main {
     background-color: rgba(36, 128, 144, 0.5);
 }
 
-.category-dogs h1 , .category-cats h1 {
-    font-size: 2vw;
+.card-select {
+    background-color: rgba(36, 128, 144, 0.9);
 }
 
+.card-open {
+    display: none;
+}
 
-.intro-detail {
-    flex: 1;
+.card-close {
+    flex-direction: row;
+}
+
+.category-dogs h1 , .category-cats h1 {
+    font-size: 2vw;
 }
 
 .category-hover {

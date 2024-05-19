@@ -30,7 +30,7 @@
     <main>
         <div class="intro" id="intro">
             <div class="intro-detail">
-                <h1>Bem-vindo ao "Adote uma Patinha"!</h1>
+                <h1>Bem-vindo <br />ao <br />"Adote uma Patinha"!</h1>
                 <p>Em nosso site, você encontrará mais do que apenas animais fofos em busca de um lar. Aqui, você
                     descobrirá histórias de amor, companheirismo e transformação. "Adote uma Patinha" é mais do que uma
                     plataforma de adoção de animais; é um ponto de encontro para corações generosos e patinhas ansiosas
@@ -43,35 +43,55 @@
         <h1 class="lema">Adote uma Patinha - onde cada adoção é um novo começo, cheio de amor e alegria.</h1>
         <div class="category-dogs">
             <h1>CACHORROS</h1>
-            <div class="list-card">
-                <div class="card">
-                    <img src="assets/dog1.png" alt="">
+            <div id="container-dog" class="container-card">
+                <div class="list-card">
+                    <div class="card" onclick="selectCard(this)" ondblclick="openCard(this, 'dog')">
+                        <img src="assets/dog1.png" alt="">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, repellat. Accusantium facilis
+                            nihil fugit incidunt tenetur cupiditate possimus illum laboriosam quam, aliquid nostrum
+                            corrupti asperiores praesentium delectus? Id, totam voluptatibus?</p>
+                    </div>
+                    <div class="card" onclick="selectCard(this)" ondblclick="openCard(this, 'dog')">
+                        <img src="assets/dog2.png" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium asperiores illo at quam
+                            ipsam rerum mollitia quae quia eaque neque voluptas voluptatibus consequuntur ex pariatur
+                            molestias vero, tempora maxime reiciendis?</p>
+                    </div>
+                    <div class="card" onclick="selectCard(this)" ondblclick="openCard(this, 'dog')">
+                        <img src="assets/dog3.png" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, beatae! Dolorem
+                            numquam, ex delectus ullam blanditiis illo totam voluptates voluptatum quo explicabo cum,
+                            labore praesentium earum fugiat? Molestiae, unde officiis?</p>
+                    </div>
+                    <div class="card" onclick="selectCard(this)" ondblclick="openCard(this, 'dog')">
+                        <img src="assets/dog4.png" alt="">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa illum modi saepe. Optio
+                            dolorem culpa iusto, sunt odio incidunt quibusdam perferendis quidem ex quaerat debitis
+                            assumenda, iste tempora ad asperiores!</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="assets/dog2.png" alt="">
-                </div>
-                <div class="card">
-                    <img src="assets/dog3.png" alt="">
-                </div>
-                <div class="card">
-                    <img onclick="pet('ja')" src="assets/dog4.png" alt="">
+                <div id="show-dog" class="show-img">
                 </div>
             </div>
         </div>
         <div class="category-cats">
             <h1>GATOS</h1>
-            <div class="list-card">
-                <div class="card">
-                    <img src="assets/cat1.png" alt="">
+            <div id="container-cat" class="container-card">
+                <div class="list-card">
+                    <div class="card" onclick="selectCard(this)" ondblclick="openCard(this, 'cat')">
+                        <img src="assets/cat1.png" alt="">
+                    </div>
+                    <div class="card" onclick="selectCard(this)" ondblclick="openCard(this, 'cat')">
+                        <img src="assets/cat2.png" alt="">
+                    </div>
+                    <div class="card" onclick="selectCard(this)" ondblclick="openCard(this, 'cat')">
+                        <img src="assets/cat3.png" alt="">
+                    </div>
+                    <div class="card" onclick="selectCard(this)" ondblclick="openCard(this, 'cat')">
+                        <img src="assets/cat4.png" alt="">
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="assets/cat2.png" alt="">
-                </div>
-                <div class="card">
-                    <img src="assets/cat3.png" alt="">
-                </div>
-                <div class="card">
-                    <img src="assets/cat4.png" alt="">
+                <div id="show-cat" class="show-img">
                 </div>
             </div>
         </div>
