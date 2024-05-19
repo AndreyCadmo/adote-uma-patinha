@@ -30,7 +30,7 @@
     <main>
         <div class="intro" id="intro">
             <div class="intro-detail">
-                <h1>Bem-vindo ao "Adote uma Patinha"!</h1>
+                <h1>Bem-vindo <br />ao <br />"Adote uma Patinha"!</h1>
                 <p>Em nosso site, você encontrará mais do que apenas animais fofos em busca de um lar. Aqui, você
                     descobrirá histórias de amor, companheirismo e transformação. "Adote uma Patinha" é mais do que uma
                     plataforma de adoção de animais; é um ponto de encontro para corações generosos e patinhas ansiosas
@@ -43,35 +43,51 @@
         <h1 class="lema">Adote uma Patinha - onde cada adoção é um novo começo, cheio de amor e alegria.</h1>
         <div class="category-dogs">
             <h1>CACHORROS</h1>
-            <div class="list-card">
-                <div class="card">
-                    <img src="assets/dog1.png" alt="">
+            <div id="container-dog" class="container-card">
+                <div class="list-card">
+                    <div class="card" onclick="selectCard(this)" ondblclick="openCard(this, 'dog')">
+                        <img src="assets/dog1.png" alt="">
+                        <p>Dog chapeleiro <br/> Ideal para quem curti um forro, festas, confratenizações, e esta junto de amigos e familiares, esse doguinho adora carinho</p>
+                    </div>
+                    <div class="card" onclick="selectCard(this)" ondblclick="openCard(this, 'dog')">
+                        <img src="assets/dog2.png" alt="">
+                        <p>Golden <br /> Ideal para pessoas luxuosas, com ele você estara arransando em qualquer ambiente, seja caminhando na praia cuidando do bem-estar ou fazendo compras no shopping.</p>
+                    </div>
+                    <div class="card" onclick="selectCard(this)" ondblclick="openCard(this, 'dog')">
+                        <img src="assets/dog3.png" alt="">
+                        <p>Dog brincalhão! <br /> Seu estilo é mais para um vira-lata caramelo, um doguinho arteiro, então esse doguinho é para você. Idependente de onde você for com ele, criara memorias inesqueciveis e certamente todos do ambiente se lembraram de vocês</p>
+                    </div>
+                    <div class="card" onclick="selectCard(this)" ondblclick="openCard(this, 'dog')">
+                        <img src="assets/dog4.png" alt="">
+                        <p>Protetor do lar! <br /> Seu tamanho não condiz com tamanho da sua coragem, esse doguinho fofo e bonitinho tem um astral super alto e antes mesmo que alguem tente ataca-lo ele sabera e antecipara o ataque do inimigo.
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="assets/dog2.png" alt="">
-                </div>
-                <div class="card">
-                    <img src="assets/dog3.png" alt="">
-                </div>
-                <div class="card">
-                    <img onclick="pet('ja')" src="assets/dog4.png" alt="">
+                <div id="show-dog" class="show-img">
                 </div>
             </div>
         </div>
         <div class="category-cats">
             <h1>GATOS</h1>
-            <div class="list-card">
-                <div class="card">
-                    <img src="assets/cat1.png" alt="">
+            <div id="container-cat" class="container-card">
+                <div class="list-card">
+                    <div class="card" onclick="selectCard(this)" ondblclick="openCard(this, 'cat')">
+                        <img src="assets/cat1.png" alt="">
+                        <p>Gatinho Pop <br/> Não ligue se seu estilo é e-girl, soft-girl ou garota tumblr, ele vai adora tirar selfie e te fazer compania, agora se você é homem hetero top, fuja ele não vai gostar de você.</p>
+                    </div>
+                    <div class="card" onclick="selectCard(this)" ondblclick="openCard(this, 'cat')">
+                        <img src="assets/cat2.png" alt="">
+                        <p>To de ressaca <br />Se você vive na balada, adora beber, e quando menos percebe já esta tomando mais uma, conheça o gatinho da noite, o barulhento dos telhados, o terror das vovos.</p>
+                    </div>
+                    <div class="card" onclick="selectCard(this)" ondblclick="openCard(this, 'cat')">
+                        <img src="assets/cat3.png" alt="">
+                        <p>Zero paciencia <br /> Zero comentarios, não gosto dele, foda-se.</p>
+                    </div>
+                    <div class="card" onclick="selectCard(this)" ondblclick="openCard(this, 'cat')">
+                        <img src="assets/cat4.png" alt="">
+                        <p>Sonequinha <br /> Ama ficar em casa, assistir netflix e tirar uma sonequinha.</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="assets/cat2.png" alt="">
-                </div>
-                <div class="card">
-                    <img src="assets/cat3.png" alt="">
-                </div>
-                <div class="card">
-                    <img src="assets/cat4.png" alt="">
+                <div id="show-cat" class="show-img">
                 </div>
             </div>
         </div>
