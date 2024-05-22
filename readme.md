@@ -12,7 +12,7 @@ Primeiro, o projeto foi elaborado no Figma. O Figma é uma ferramenta de design 
 
 #### Desenvolvimento com HTML, CSS e JavaScript:
 
-Depois que o design foi finalizado no Figma, o próximo passo foi a implementação do site usando o framework Angular. Utilizamos o Angular para "traduzir" o design criado no Figma em código funcional.
+Foi realizado o design pelo figma, e logo passado para o HTML e CSS, as animações do JavaScript, são o onClick, e ondblclick para os cards. o evento onClick chama a função que altera o canal alpha do background. e o evento ondblclick chama a função para abrir o card em tamanha maior para melhor visualização e uma breve descrição do animal aparecer.
 
 #### Objetivo: 
 O principal objetivo do site era demonstrar o conhecimento em Html, CSS e JavaScript.
